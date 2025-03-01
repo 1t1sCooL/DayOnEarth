@@ -1,0 +1,203 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #373737;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 100%; 
+  width: 100%;
+  text-align: center;
+  margin: 0rem;
+  box-sizing: border-box; 
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.date-container {
+  margin-bottom: 2rem;
+}
+
+.date-container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.year-container {
+  margin-bottom: 2rem;
+}
+
+.year-container input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; 
+  max-width: 200px; 
+  box-sizing: border-box; 
+}
+
+.year-container input:focus {
+  border-color: #4a4a4a;
+  box-shadow: 0 0 10px rgba(92, 92, 92, 0.5);
+  outline: none;
+}
+
+.year-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #545454;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; 
+  max-width: 150px; 
+  margin-top: 1rem;
+  box-sizing: border-box; 
+}
+
+.year-container button:hover {
+  background-color: #787878;
+}
+
+.month-container {
+  margin-bottom: 2rem;
+}
+
+.month-container select {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #969494;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+}
+
+.month-container select:focus {
+  border-color: #545454;
+  box-shadow: 0 0 5px rgba(101, 101, 101, 0.5);
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #414141;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 150px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #404040;
+}
+
+input, select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #696969;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #515151;
+  box-shadow: 0 0 5px rgba(88, 88, 88, 0.5);
+  outline: none;
+}
+
+/* Адаптивные стили */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .year-container input,
+  .month-container select,
+  button {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .year-container button {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    max-width: 600px;
+  }
+}
